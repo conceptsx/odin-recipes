@@ -3,15 +3,70 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Odin Recipes</title>
+        <title>Odin Recipe's Home</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>"Odin Recipes"</h1>
-        <ul>
-            <li><a href="recipes/lasagna.html">Odin's Lasagna</a></li>
-            <li><a href="recipes/air-fryer-waffle-egg.html">Air-Fryer Waffle Egg Hole</a></li>
-            <li><a href="recipes/air-fryer-tilapia.html">Air-fryer Tilapia</a></li>
-        </ul>
+        <div class="navbar">
+            <h1>Odin's Recipes</h1>
+            <a href="index.html">Home</a>
+            <p id="seperator"> || </p>
+            <a href="recipes/lasagna.html">Odin's Lasagna</a>
+            <p id="seperator"> || </p>
+            <a href="recipes/air-fryer-waffle-egg.html">Air-Fryer Waffle Egg Hole</a>
+            <p id="seperator"> || </p>
+            <a href="recipes/air-fryer-tilapia.html">Air-fryer Tilapia</a>
+        </div>
+        <div class="main">
+            <img id="banner" src="./images/recipeshome.jpg" alt="Recipes Banner">
+            <p>Please check out our wonderful recipes in the menu bar above,</p>
+            <p>and if you have any you would like to share please reach out.</p>
+        
+
+            <div class="recipeform">
+                <h1>Submit Your Recipe</h1>
+                <form action="/submit_recipe" method="post">
+                <label for="recipe_name">Recipe Name:</label>
+                <input type="text" id="recipe_name" name="recipe_name" required>
+                <br>
+                
+                <label for="ingredients">Ingredients:</label>
+                <textarea id="ingredients" name="ingredients" required></textarea>
+                <br>
+                
+                <label for="instructions">Instructions:</label>
+                <textarea id="instructions" name="instructions" required></textarea>
+                <br>
+                
+                <label for="prep_time">Prep Time (in minutes):</label>
+                <input type="number" id="prep_time" name="prep_time" required>
+                <br>
+                
+                <label for="cook_time">Cook Time (in minutes):</label>
+                <input type="number" id="cook_time" name="cook_time" required>
+                <br>
+                
+                <label for="servings">Servings:</label>
+                <input type="number" id="servings" name="servings" required>
+                <br>
+                
+                <label for="author_name">Your Name:</label>
+                <input type="text" id="author_name" name="author_name" required>
+                <br>
+                
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                
+                <label for="notes">Additional Notes:</label>
+                <textarea id="notes" name="notes"></textarea>
+                <br>
+                
+                <input type="submit" value="Submit Recipe">
+                </form>
+            </div>
+        </div>
+
         
     </body>
 </html>
