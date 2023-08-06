@@ -8,62 +8,34 @@
     </head>
     <body>
         <div class="navbar">
-            <h1>Odin's Recipes</h1>
-            <a href="index.html">Home</a>
-            <p id="seperator"> || </p>
-            <a href="recipes/lasagna.html">Odin's Lasagna</a>
-            <p id="seperator"> || </p>
-            <a href="recipes/air-fryer-waffle-egg.html">Air-Fryer Waffle Egg Hole</a>
-            <p id="seperator"> || </p>
-            <a href="recipes/air-fryer-tilapia.html">Air-fryer Tilapia</a>
+            <div class="pagetitle">
+                <h1>Cam's Recipes</h1>
+            </div>
+            <div class="navbar-links">
+                <a href="../index.html">Home</a>
+                <a href="lasagna.html">Lasagna</a>
+                <a href="air-fryer-waffle-egg.html">Air-Fryer Waffle Egg Hole</a>
+                <a href="air-fryer-tilapia.html">Air-Fryer Tilapia</a>
+            </div>
         </div>
         <div class="main">
-            <img id="banner" src="./images/recipeshome.jpg" alt="Recipes Banner">
-            <p>Please check out our wonderful recipes in the menu bar above,</p>
-            <p>and if you have any you would like to share please reach out.</p>
-        
+            <div class="container">
+                <div class="left">
+                    <img id="banner" src="./images/recipeshome.jpg" alt="Recipes Banner">
+                </div>
+                <div class="right">
+                    <h3 class="description">What is this?</h3>
+                    <p>A small project made and updated as I learn more formatting tricks on TheOdinProject.</p>
+                    
+                    <h3>How to</h3>
+                    <ul>
+                        <li>Utilize any of the links on top to view the relative recipe card.</li>
+                        <li>If you have any recipes you would like to add, please reach out.</li>
+                    </ul>
+                </div>
 
             <div class="recipeform">
-                <h1>Submit Your Recipe</h1>
-                <form action="/submit_recipe" method="post">
-                <label for="recipe_name">Recipe Name:</label>
-                <input type="text" id="recipe_name" name="recipe_name" required>
-                <br>
                 
-                <label for="ingredients">Ingredients:</label>
-                <textarea id="ingredients" name="ingredients" required></textarea>
-                <br>
-                
-                <label for="instructions">Instructions:</label>
-                <textarea id="instructions" name="instructions" required></textarea>
-                <br>
-                
-                <label for="prep_time">Prep Time (in minutes):</label>
-                <input type="number" id="prep_time" name="prep_time" required>
-                <br>
-                
-                <label for="cook_time">Cook Time (in minutes):</label>
-                <input type="number" id="cook_time" name="cook_time" required>
-                <br>
-                
-                <label for="servings">Servings:</label>
-                <input type="number" id="servings" name="servings" required>
-                <br>
-                
-                <label for="author_name">Your Name:</label>
-                <input type="text" id="author_name" name="author_name" required>
-                <br>
-                
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" required>
-                <br>
-                
-                <label for="notes">Additional Notes:</label>
-                <textarea id="notes" name="notes"></textarea>
-                <br>
-                
-                <input type="submit" value="Submit Recipe">
-                </form>
             </div>
         </div>
 
